@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="static/images/sr.png" type="image/x-icon">
+	<link rel="shortcut icon" href="static/images/sr.png" type="image/x-icon">
+  <title>SR Tutorials - Assess</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body data-theme="dark">
+    <div class="top-navbar">
+        <div class="website-name">
+          <a href="index.html">S<span class="r">R</span></a>
+        </div>
+        <div class="top-links">
+          <img src="static/images/menu.svg" class="menu-icon" id="menuIcon" />
+          <div class="links" id="navbarLinks">
+            <a href="learn.html">Learn</a>
+            <a href="assess.html" class="active">Assess</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <img src="static/images/light_mode.png" alt="Light Theme Icon" id="theme-icon" class="theme-switch" onclick="toggleTheme()" />
+        </div>
+    </div>
+
+    <div class="horizontal-navbar" id="horizontalNavbar">
+      <!-- Fixed First Column (Toggle Button) -->
+      <div class="fixed-column">
+        <button class="toggle-btn" onclick="toggleVerticalNavbar()">☰</button>
+      </div>
+      <button class="scroll-btn scroll-btn-left" onclick="scrollNavbar('left')">&#8592;</button>
+      <div class="row" id="row">
+        <!-- Add other columns dynamically -->
+      </div>
+      <button class="scroll-btn scroll-btn-right" onclick="scrollNavbar('right')">&#8594;</button>
+    </div>
+
+    <div class="vertical-navbar" id="verticalNavbar"></div>
+
+    <div class="content"></div>
+
+    <!-- Copyright Footer (Fixed at the bottom) -->
+    <div class="copyright-footer">
+      <p>&copy; 2025 SR. All Rights Reserved.</p>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopButton" class="scroll-to-top-button">&#8679;</button>
+  
+    <script src="static/js/scripts.js"></script>
+    <script src="static/js/theme.js"></script>
+    <script src="database/js/assess-data.js"></script>
+    <script src="static/js/navbar.js"></script>
+
+</body>
+</html>
