@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (savedTheme) {
       body.setAttribute('data-theme', savedTheme);
-      themeIcon.src = savedTheme === 'dark' ? 'https://raw.githubusercontent.com/sairaj0003/SRTutorials/refs/heads/main/static/images/abc.png' : 'https://raw.githubusercontent.com/sairaj0003/SRTutorials/refs/heads/main/static/images/dark_mode.png';
+      themeIcon.src = savedTheme === 'dark' ? 'https://raw.githubusercontent.com/sairaj0003/SRTutorials/refs/heads/main/static/images/light_mode.png' : 'https://raw.githubusercontent.com/sairaj0003/SRTutorials/refs/heads/main/static/images/dark_mode.png';
       themeIcon.alt = savedTheme === 'dark' ? 'Dark Theme Icon' : 'Light Theme Icon';
   }
 });
@@ -22,7 +22,7 @@ function toggleTheme() {
       localStorage.setItem('theme', 'light');  // Save to localStorage
   } else {
       body.setAttribute('data-theme', 'dark');
-      themeIcon.src = 'https://raw.githubusercontent.com/sairaj0003/SRTutorials/refs/heads/main/static/images/abc.png';
+      themeIcon.src = 'https://raw.githubusercontent.com/sairaj0003/SRTutorials/refs/heads/main/static/images/light_mode.png';
       themeIcon.alt = 'Dark Theme Icon';
       localStorage.setItem('theme', 'dark');  // Save to localStorage
   }
