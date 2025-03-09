@@ -210,7 +210,7 @@ function toggleVerticalNavbar() {
   content.style.marginLeft = navbar.classList.contains('hidden') ? '10px' : 'calc(var(--navbar-width) + 10px)';
 }
 
-if (window.innerWidth <= 410) {
+if (window.innerWidth <= 700) {
   toggleVerticalNavbar();
 }
 
