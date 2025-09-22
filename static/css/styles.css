@@ -29,8 +29,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  display: flex;
-  flex-direction: column;
+/*   display: flex;
+  flex-direction: column; */
 }
 
 /* Navbar */
@@ -1069,4 +1069,5 @@ button:focus {
   .footer {
     grid-template-columns: repeat(1, 1fr);
   }
+
 }
